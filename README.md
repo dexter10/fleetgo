@@ -2,13 +2,13 @@
 
 
 
-[Companen](https://companen.nl)
+[Companen - Wordpress/ACF](https://companen.nl)
 
-[Globen Vacatures](https://globen.nl/vacatures)
+[Globen Vacatures - Wordpress/Custom PHP/HTML/CSS](https://globen.nl/vacatures)
 
 [Soupenzo Nuxt/Vue.js](https://soupenzo.nl)
 
 [EcoformEurope Calculator Vue.js](https://ecoformeurope.com/shop/)
 
-[DesignEffects](https://designeffects.nl)
+[DesignEffects - Wordpress/Custom javascript](https://designeffects.nl)
 
