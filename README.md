@@ -2,7 +2,7 @@
 
 
 
-[Companen - Wordpress/ACF](https://companen.nl)
+[Companen -- Wordpress/ACF](https://companen.nl)
 
 [Globen Vacatures - Wordpress/Custom PHP/HTML/CSS](https://globen.nl/vacatures)
 
