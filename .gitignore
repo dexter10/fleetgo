@@ -22,4 +22,4 @@ logs
 .env.*
 !.env.example
 .parcel-cache
-opdracht.code-workspace
+*.code-workspace
