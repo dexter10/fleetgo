@@ -1,7 +1,5 @@
 # Verzameld Werk Examples
 
-
-
 [Companen -- Wordpress/ACF](https://companen.nl)
 
 [Globen Vacatures -- Wordpress/Custom PHP/HTML/CSS](https://globen.nl/vacatures)
@@ -12,3 +10,8 @@
 
 [DesignEffects -- Wordpress/Custom javascript](https://designeffects.nl)
 
+Spin up Parcel:
+
+npm run start
+
+May have to clear/delete .parcel-cache.

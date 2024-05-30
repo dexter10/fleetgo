@@ -631,6 +631,12 @@ const getCountryData = function(country) {
 btn.addEventListener("click", function() {
     getCountryData("germany");
 });
+// Read and parse a URL-addressable XML file into a DOM tree:
+fetch("example.xml").then((response)=>response.text()).then((text)=>{
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(text, "text/xml");
+    console.log(doc.documentElement.nodeName);
+});
 
 },{"bootstrap":"h36JB"}],"h36JB":[function(require,module,exports) {
 /*!
@@ -6303,6 +6309,6 @@ var createPopper = /*#__PURE__*/ (0, _createPopperJs.popperGenerator)({
     defaultModifiers: defaultModifiers
 }); // eslint-disable-next-line import/no-unused-modules
 
-},{"./createPopper.js":"cHuNp","./modifiers/eventListeners.js":"hBKsL","./modifiers/popperOffsets.js":"6I679","./modifiers/computeStyles.js":"gDlm2","./modifiers/applyStyles.js":"4iMn4","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["j2YDk","1SICI"], "1SICI", "parcelRequire81eb")
+},{"./createPopper.js":"cHuNp","./modifiers/eventListeners.js":"hBKsL","./modifiers/popperOffsets.js":"6I679","./modifiers/computeStyles.js":"gDlm2","./modifiers/applyStyles.js":"4iMn4","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["j2YDk","1SICI"], "1SICI", "parcelRequirea247")
 
 //# sourceMappingURL=index.18dbc454.js.map

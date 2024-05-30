@@ -63,3 +63,12 @@ const getCountryData = function (country) {
 btn.addEventListener("click", function () {
   getCountryData("germany");
 });
+
+// Read and parse a URL-addressable XML file into a DOM tree:
+fetch("example.xml")
+  .then((response) => response.text())
+  .then((text) => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(text, "text/xml");
+    console.log(doc.documentElement.nodeName);
+  });

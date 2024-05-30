@@ -4,6 +4,7 @@
 .nuxt
 .nitro
 .cache
+.parcel-cache
 
 # Node dependencies
 node_modules
@@ -16,10 +17,9 @@ logs
 .DS_Store
 .fleet
 .idea
+*.code-workspace
 
 # Local env files
 .env
 .env.*
 !.env.example
-.parcel-cache
-*.code-workspace

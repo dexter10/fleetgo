@@ -1,143 +1,56 @@
-// Custom.scss
-
 // Import all of Bootstrap's CSS
-// @import "bootstrap/scss/bootstrap";
 
-// Option B: Include parts of Bootstrap
+$enable-negative-margins: true;
 
-// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "node_modules/bootstrap/scss/functions";
+@import "bootstrap/scss/bootstrap";
 
-// 2. Include any default variable overrides here
-
-// // Customize breakpoints - lg = 900px
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 900px,
-  xl: 1200px,
-  xxl: 1400px,
-);
-
-// Custom colors
-$vw-color-primary: #5e724f;
-$vw-color-secondary: #892e24;
-
-// Primary/Secondary, etc. colors
-$primary: $vw-color-secondary;
-$secondary: $vw-color-secondary;
-
-// Custom fonts
-$font-family-base: Montserrat;
-$headings-font-family: Raleway;
-$headings-color: $vw-color-primary;
-
-// RFS (Responsive Font Size) base
-// Default = 1.25rem
-$rfs-base-value: 1rem;
-
-// Smaller border radius
-$border-radius: 0.125rem;
-
-// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/variables-dark";
-
-// 4. Include any default map overrides here
-
-$custom-colors: (
-  "vw-color-primary": $vw-color-primary,
-  "vw-color-secondary": $vw-color-secondary,
-);
-
-// Merge the maps
-$theme-colors: map-merge($theme-colors, $custom-colors);
-
-// 5. Include remainder of required parts
-@import "node_modules/bootstrap/scss/maps";
-@import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/root";
-
-// Custom font declarations
-// After :root
-@import "fonts";
-
-// 6. Optionally include any other parts as needed
-@import "node_modules/bootstrap/scss/utilities";
-@import "node_modules/bootstrap/scss/reboot";
-@import "node_modules/bootstrap/scss/type";
-@import "node_modules/bootstrap/scss/images";
-@import "node_modules/bootstrap/scss/containers";
-@import "node_modules/bootstrap/scss/grid";
-
-@import "node_modules/bootstrap/scss/tables";
-@import "node_modules/bootstrap/scss/forms";
-@import "node_modules/bootstrap/scss/buttons";
-@import "node_modules/bootstrap/scss/transitions";
-@import "node_modules/bootstrap/scss/dropdown";
-@import "node_modules/bootstrap/scss/button-group";
-@import "node_modules/bootstrap/scss/nav";
-@import "node_modules/bootstrap/scss/navbar";
-@import "node_modules/bootstrap/scss/card";
-@import "node_modules/bootstrap/scss/accordion";
-@import "node_modules/bootstrap/scss/breadcrumb";
-@import "node_modules/bootstrap/scss/pagination";
-@import "node_modules/bootstrap/scss/badge";
-@import "node_modules/bootstrap/scss/alert";
-@import "node_modules/bootstrap/scss/progress";
-@import "node_modules/bootstrap/scss/list-group";
-@import "node_modules/bootstrap/scss/close";
-@import "node_modules/bootstrap/scss/toasts";
-@import "node_modules/bootstrap/scss/modal";
-@import "node_modules/bootstrap/scss/tooltip";
-@import "node_modules/bootstrap/scss/popover";
-@import "node_modules/bootstrap/scss/carousel";
-@import "node_modules/bootstrap/scss/spinners";
-@import "node_modules/bootstrap/scss/offcanvas";
-@import "node_modules/bootstrap/scss/placeholders";
-
-@import "node_modules/bootstrap/scss/helpers";
-
-// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
-@import "node_modules/bootstrap/scss/utilities/api";
-
-// 8. Add additional custom code here
-
-// Responsive typography - RFS
-
-.card-text {
-  @include font-size(1.2rem);
+:root {
+  --margin-top: 0.5rem;
 }
 
-h1 {
-  @include rfs(1.6rem, margin-bottom);
+.hero-margin-top {
+  margin-top: -12%;
 }
 
-.btn {
-  display: none;
+.hero_bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
+.hero_overlay {
+  // background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 33%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
 @include media-breakpoint-up(md) {
-  .btn {
-    display: block;
+  .hero_overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
   }
 }
 
-.themed-grid-col {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
+.hero_overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 33%,
+    rgba(0, 0, 0, 0) 100%
+  );
 
-// Nested declarations
-.class {
-  color: red;
-  border-color: blue;
-
-  &:hover {
-    color: green;
-    background-color: yellow;
-    border-color: yellowgreen;
+  @include media-breakpoint-up(md) {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
   }
 }

@@ -3,39 +3,72 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Verzameld Werk opdracht</title>
+    <title>Bootstrap w/ Parcel</title>
     <link rel="stylesheet" href="scss/styles.scss" />
     <script type="module" src="js/main.js"></script>
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Verzameld Werk opdracht</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
-    <div class="container-fluid py-4 px-3 mx-auto">
-      <div class="row mb-3">
-        <div class="col-4 themed-grid-col bg-vw-color-primary text-white">
-          .col-4
-        </div>
-        <div class="col-4 themed-grid-col">.col-4</div>
-        <div class="col-4 themed-grid-col">.col-4</div>
-      </div>
-    </div>
+    <!-- Hero -->
 
-    <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Parent Card</h5>
-
-          <!-- Nested Child Card -->
-          <div class="card child-card">
-            <div class="card-body">
-              <h5 class="card-title">Child Card</h5>
-              <p class="card-text">This is the content of the child card.</p>
+    <div
+      class="hero_bg position-relative h-25"
+      style="
+        background-image: url('https://www.dirksenbedrijfskleding.nl/app/uploads/00_cw-e1641834632287-1500x400.jpg');
+        /* height: 400px; */
+      "
+    >
+      <div class="container position-relative py-md-5 z-1">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="mask py-5 z-1">
+              <div class="d-flex h-100">
+                <div class="text-white">
+                  <h1>Heading</h1>
+                  <h4>Subheading</h4>
+                  <p>Text with multiple lines</p>
+                  <a
+                    data-mdb-ripple-init
+                    class="btn btn-outline-light btn-lg"
+                    href="#!"
+                    role="button"
+                    >Call to action</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <p class="card-text">This is the content of the parent card.</p>
+      <div
+        class="hero_overlay position-absolute h-100 w-100 top-0 right-0 bottom-0 left-0"
+      ></div>
+    </div>
+    <!-- Hero -->
+
+    <div class="container py-4 px-3 mx-auto">
+      <h1>Hero Negative Margin Top For Slider</h1>
+    </div>
+
+    <div class="hero-container text-white">
+      <picture class="hero-image z-1">
+        <source
+          srcset="
+            https://www.dirksenbedrijfskleding.nl/app/uploads/00_cw-e1641834632287-1500x400.jpg
+          "
+        />
+        <img
+          src="https://www.dirksenbedrijfskleding.nl/app/uploads/00_cw-e1641834632287-1500x400.jpg"
+          class="img-fluid w-100"
+        />
+      </picture>
+      <div
+        class="hero-slider container hero-margin-top bg-primary z-2 position-relative"
+        style="min-height: 400px"
+      >
+        <div class="row text-center">
+          <div class="col-6">Column 1</div>
+          <div class="col-6">Column 2</div>
         </div>
       </div>
     </div>
