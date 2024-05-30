@@ -4,6 +4,15 @@ $enable-negative-margins: true;
 
 @import "bootstrap/scss/bootstrap";
 
+// Hero Responsive text size
+
+.responsive-text {
+  line-height: 1.5;
+  font-size: clamp(0.8rem, 1.8vw, 2rem);
+}
+
+// Hero Negative margin-top
+
 :root {
   --margin-top: 0.5rem;
 }
@@ -11,6 +20,14 @@ $enable-negative-margins: true;
 .hero-margin-top {
   margin-top: -12%;
 }
+
+// Hero Video
+
+video {
+  display: block;
+}
+
+// Hero Image
 
 .hero_bg {
   background-repeat: no-repeat;

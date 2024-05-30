@@ -3,39 +3,76 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Verzameld Werk opdracht</title>
+    <title>Bootstrap w/ Parcel</title>
     <link rel="stylesheet" href="/index.044e704e.css">
     <script src="/index.18dbc454.js" defer=""></script>
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Verzameld Werk opdracht</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div>
-    <div class="container-fluid py-4 px-3 mx-auto">
-      <div class="row mb-3">
-        <div class="col-4 themed-grid-col bg-vw-color-primary text-white">
-          .col-4
-        </div>
-        <div class="col-4 themed-grid-col">.col-4</div>
-        <div class="col-4 themed-grid-col">.col-4</div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Parent Card</h5>
-
-          <!-- Nested Child Card -->
-          <div class="card child-card">
-            <div class="card-body">
-              <h5 class="card-title">Child Card</h5>
-              <p class="card-text">This is the content of the child card.</p>
+    <!-- Hero - Video -->
+    <header class="position-relative">
+      <div class="position-absolute h-100 w-100">
+        <div class="container h-100">
+          <div class="row d-flex align-items-center h-100">
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="h-100 text-white">
+                <h1>Heading</h1>
+                <h4>Subheading</h4>
+                <p class="responsive-text">
+                  Text with multiple lines of text. Text with multiple lines of
+                  text. Text with multiple lines of text.
+                </p>
+                <a data-mdb-ripple-init="" class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+      <video autoplay="" loop="" id="video-background" class="h-auto w-100">
+        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+        Your brower is old
+      </video>
+    </header>
+    <!-- /Hero - Video -->
 
-          <p class="card-text">This is the content of the parent card.</p>
+    <div class="divider">Divider</div>
+
+    <!-- Hero - Image -->
+
+    <div class="hero_bg position-relative" style="background-image: url(&quot;https://www.dirksenbedrijfskleding.nl/app/uploads/00_cw-e1641834632287-1500x400.jpg&quot;)">
+      <div class="container position-relative py-5 z-1">
+        <div class="row d-flex align-items-center h-100">
+          <div class="col-8 col-md-4 col-lg-3">
+            <div class="h-100 text-white">
+              <h1>Heading</h1>
+              <h4>Subheading</h4>
+              <p class="responsive-text">
+                Text with multiple lines of text. Text with multiple lines of
+                text. Text with multiple lines of text.
+              </p>
+              <a data-mdb-ripple-init="" class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero_overlay position-absolute h-100 w-100 top-0 right-0 bottom-0 left-0"></div>
+    </div>
+
+    <!-- /Hero Image -->
+
+    <div class="container py-4 px-3 mx-auto">
+      <h1>Hero Negative Margin Top For Slider</h1>
+    </div>
+
+    <div class="hero-container text-white">
+      <picture class="hero-image z-1">
+        <source srcset="https://www.dirksenbedrijfskleding.nl/app/uploads/00_cw-e1641834632287-1500x400.jpg">
+        <img src="https://www.dirksenbedrijfskleding.nl/app/uploads/00_cw-e1641834632287-1500x400.jpg" class="img-fluid w-100">
+      </picture>
+      <div class="hero-slider container hero-margin-top bg-primary z-2 position-relative" style="min-height: 400px">
+        <div class="row text-center">
+          <div class="col-6">Column 1</div>
+          <div class="col-6">Column 2</div>
         </div>
       </div>
     </div>
