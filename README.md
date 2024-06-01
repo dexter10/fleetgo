@@ -10,6 +10,10 @@
 
 [DesignEffects -- Wordpress/Custom javascript](https://designeffects.nl)
 
+Install Parcel in project:
+
+npm install --save-dev parcel
+
 Spin up Parcel:
 
 npm run start
