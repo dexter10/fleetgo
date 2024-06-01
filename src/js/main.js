@@ -1,9 +1,6 @@
 // Import all of Bootstrap's JS
 import * as bootstrap from "bootstrap";
 
-// const heightOutput = document.querySelector("#height");
-// const widthOutput = document.querySelector("#width");
-
 const columns = document.querySelectorAll(".column");
 
 function reportColumnSize() {
