@@ -9,9 +9,27 @@
   </head>
   <body>
     <!-- Hero Image Position Absolute -->
-    <div class="divider">Hero Image Position Absolute</div>
+    <div class="divider">
+      <h3>Hero Image Position Absolute</h3>
+      Advantages
+      <ul>
+        <li>
+          Ability to specifiy srcsets for media queries. Smaller file sizes per
+          device.
+        </li>
+      </ul>
+      Disadvantages
+      <ul>
+        <li>
+          Original image has to be tall enough to encapsulate content for all
+          device widths.
+        </li>
+        <li>Adding multiple image formats in image block dropdown in Sulu.</li>
+        <li>Often needing min-height declarations for each media query.</li>
+      </ul>
+    </div>
 
-    <div class="hero- position-relative">
+    <div class="position-relative">
       <div class="hero-image position-relative">
         <picture
           class="hero-image z-1"
@@ -63,23 +81,42 @@
     <!-- /Hero Image Position Absolute -->
 
     <!-- Hero - Background Image -->
-    <div class="divider">Hero - Background Image</div>
+
+    <div class="divider">
+      <h3>Hero - Background Image</h3>
+      Advantages
+      <ul>
+        <li>A single image format in Sulu.</li>
+        <li>The image is always centered.</li>
+        <li>The content is always centered.</li>
+      </ul>
+      Disadvantages
+      <ul>
+        <li>
+          A sinlge large image format (large file size) is loaded for all
+          devices.
+        </li>
+      </ul>
+    </div>
 
     <div
       class="hero_bg position-relative"
       style="
-        background-image: url('https://www.dirksenbedrijfskleding.nl/app/uploads/00_cw-e1641834632287-1500x400.jpg'); /* min-height: 400px; */
+        background-image: url('https://www.dirksenbedrijfskleding.nl/app/uploads/00_cw-e1641834632287-1500x400.jpg');
       "
     >
       <div class="container position-relative py-5 z-1">
+        <!-- Difference with video hero - py-5 necessary for background image without min-height -->
         <div class="row d-flex align-items-center h-100">
-          <div class="col-8 col-md-4 col-lg-3">
+          <div class="col-8 col-md-4">
             <div class="h-100 text-white">
               <h1>Heading</h1>
               <h4>Subheading</h4>
               <p class="responsive-text">
                 Text with multiple lines of text. Text with multiple lines of
-                text. Text with multiple lines of text.
+                text. Text with multiple lines of text. Text with multiple lines
+                of text. Text with multiple lines of text. Text with multiple
+                lines of text.
               </p>
               <a
                 data-mdb-ripple-init
@@ -129,6 +166,7 @@
       </div>
 
       <iframe
+        class="w-100"
         width="1520"
         height="400"
         src="https://www.youtube.com/embed/vr0qNXmkUJ8?list=PLNhzc-Os3JK8ExayVzzoHVvP2c0-4_oqt"
@@ -173,5 +211,7 @@
     </div>
 
     <!-- /Hero Image Negative Margin -->
+
+    <a href="./image-formats.html">Image Formats</a>
   </body>
 </html>
