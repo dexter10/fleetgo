@@ -23,7 +23,8 @@ $enable-negative-margins: true;
 
 // Hero Video
 
-video {
+video,
+iframe {
   display: block;
 }
 
@@ -70,4 +71,8 @@ video {
       rgba(0, 0, 0, 0) 100%
     );
   }
+}
+
+.divider {
+  padding: 1rem 0;
 }

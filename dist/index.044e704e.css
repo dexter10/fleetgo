@@ -14103,7 +14103,7 @@ textarea.form-control-lg {
   margin-top: -12%;
 }
 
-video {
+video, iframe {
   display: block;
 }
 
@@ -14127,5 +14127,9 @@ video {
   .hero_overlay {
     background: linear-gradient(90deg, #000 0%, #0000 100%);
   }
+}
+
+.divider {
+  padding: 1rem 0;
 }
 /*# sourceMappingURL=index.044e704e.css.map */

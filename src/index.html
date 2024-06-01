@@ -8,50 +8,67 @@
     <script type="module" src="js/main.js"></script>
   </head>
   <body>
-    <!-- Hero - Video -->
-    <header class="position-relative">
-      <div class="position-absolute h-100 w-100">
-        <div class="container h-100">
-          <div class="row d-flex align-items-center h-100">
-            <div class="col-12 col-md-4 col-lg-3">
-              <div class="h-100 text-white">
-                <h1>Heading</h1>
-                <h4>Subheading</h4>
-                <p class="responsive-text">
-                  Text with multiple lines of text. Text with multiple lines of
-                  text. Text with multiple lines of text.
-                </p>
-                <a
-                  data-mdb-ripple-init
-                  class="btn btn-outline-light btn-lg"
-                  href="#!"
-                  role="button"
-                  >Call to action</a
-                >
+    <!-- Hero Image Position Absolute -->
+    <div class="divider">Hero Image Position Absolute</div>
+
+    <div class="hero- position-relative">
+      <div class="hero-image position-relative">
+        <picture
+          class="hero-image z-1"
+          style="display: block; min-height: 400px"
+        >
+          <source
+            srcset="
+              https://www.dirksenbedrijfskleding.nl/app/uploads/00_cw-e1641834632287-1500x400.jpg
+            "
+          />
+          <img
+            src="https://www.dirksenbedrijfskleding.nl/app/uploads/00_cw-e1641834632287-1500x400.jpg"
+            class="img-fluid w-100"
+          />
+        </picture>
+
+        <div
+          class="d-flex align-items-center position-absolute top-0 left-0 right-0 bottom-0 h-100 w-100"
+        >
+          <div class="container z-1">
+            <div class="row d-flex align-items-center h-100">
+              <div class="col-8 col-md-4 col-lg-3">
+                <div class="h-100 text-white">
+                  <h1>Heading</h1>
+                  <h4>Subheading</h4>
+                  <p class="responsive-text">
+                    Text with multiple lines of text. Text with multiple lines
+                    of text. Text with multiple lines of text.
+                  </p>
+                  <a
+                    data-mdb-ripple-init
+                    class="btn btn-outline-light btn-lg"
+                    href="#!"
+                    role="button"
+                    >Call to action</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <video autoplay loop id="video-background" class="h-auto w-100">
-        <source
-          src="https://www.w3schools.com/howto/rain.mp4"
-          type="video/mp4"
-        />
-        Your brower is old
-      </video>
-    </header>
-    <!-- /Hero - Video -->
 
-    <div class="divider">Divider</div>
+      <div
+        class="hero_overlay position-absolute h-100 w-100 top-0 right-0 bottom-0 left-0"
+      ></div>
+    </div>
 
-    <!-- Hero - Image -->
+    <!-- /Hero Image Position Absolute -->
+
+    <!-- Hero - Background Image -->
+    <div class="divider">Hero - Background Image</div>
 
     <div
       class="hero_bg position-relative"
       style="
-        background-image: url('https://www.dirksenbedrijfskleding.nl/app/uploads/00_cw-e1641834632287-1500x400.jpg');
-        /* min-height: 400px; */
+        background-image: url('https://www.dirksenbedrijfskleding.nl/app/uploads/00_cw-e1641834632287-1500x400.jpg'); /* min-height: 400px; */
       "
     >
       <div class="container position-relative py-5 z-1">
@@ -81,11 +98,56 @@
       ></div>
     </div>
 
-    <!-- /Hero Image -->
+    <!-- /Hero Background Image -->
 
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hero Negative Margin Top For Slider</h1>
+    <!-- Hero - Video -->
+    <div class="divider">Hero - Video</div>
+
+    <div class="position-relative">
+      <div class="position-absolute h-100 w-100 z-1">
+        <div class="container h-100">
+          <div class="row d-flex align-items-center h-100">
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="h-100 text-white">
+                <h1>Heading</h1>
+                <h4>Subheading</h4>
+                <p class="responsive-text">
+                  Text with multiple lines of text. Text with multiple lines of
+                  text. Text with multiple lines of text.
+                </p>
+                <a
+                  data-mdb-ripple-init
+                  class="btn btn-outline-light btn-lg"
+                  href="#!"
+                  role="button"
+                  >Call to action</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <iframe
+        width="1520"
+        height="400"
+        src="https://www.youtube.com/embed/vr0qNXmkUJ8?list=PLNhzc-Os3JK8ExayVzzoHVvP2c0-4_oqt"
+        title="GoPro HERO6: This Is the Moment in 4K"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+
+      <div
+        class="hero_overlay position-absolute h-100 w-100 top-0 right-0 bottom-0 left-0 z-0"
+      ></div>
     </div>
+    <!-- /Hero - Video -->
+
+    <!-- Hero Image Negative Margin -->
+
+    <div class="divider">Hero Image Negative Margin</div>
 
     <div class="hero-container text-white">
       <picture class="hero-image z-1">
@@ -109,5 +171,7 @@
         </div>
       </div>
     </div>
+
+    <!-- /Hero Image Negative Margin -->
   </body>
 </html>
