@@ -13,6 +13,7 @@
 Install Parcel in project:
 
 npm install --save-dev parcel
+
 yarn add --dev parcel
 
 Spin up Parcel:
